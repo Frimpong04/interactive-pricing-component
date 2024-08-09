@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
     <title>Interactive Pricing Component</title>
 </head>
 <body>
-    
+    <div class="main-content">
+        <div class="title-container">
+            <h1>Simple, traffic-based pricing</h1>
+            <p>Sign-up for our 30-day trial. No credit card neede</p>
+        </div>
+
+        <div class="pricing-component">
+            <div class="upper-price-component">
+                <div class="views">
+                    <p>100KPAGEVIEWS</p>
+                    <p><span class="amount">$16.00</span>/month</p>
+                </div>
+
+                <div class="slider">
+                    <input type="range" name="price-slider" >
+                </div>
+
+                <div class="price-toggle">
+                    <p>monthly billing</p>
+                    <div class="toggle-buttons">
+                        <button class="monthly-btn"></button>
+                        <button class="yearly-btn"></button>
+                     </div>
+                    <p>yearly  billing</p>
+                    <p class="discount">25% discount</p>
+                </div>
+            </div>
+            <div class="lower-price-component">
+                <div class="benefits-container">
+                    <div class="icon-container">
+                        <img src="images/icon-check.svg" alt="check icon">
+                        <p>Unlimited websites</p>
+                    </div>
+
+                    <div class="icon-container">
+                        <img src="images/icon-check.svg" alt="check icon">
+                        <p>100% data ownership</p>
+                    </div>
+
+                    <div class="icon-container">
+                        <img src="images/icon-check.svg" alt="check icon">
+                        <p>Email reports</p>
+                    </div>
+                </div>
+                <div class="cta">
+                    <button class="cta-btn">Start my trial</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
