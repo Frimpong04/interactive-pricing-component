@@ -113,11 +113,14 @@ input[type="range"] {
     cursor: pointer;
     outline: none;
 
-    overflow: hidden;
+    /* overflow: hidden; */
+    height: 0.6rem;
     border-radius: 1.6rem;
+
+    background-color: var(--empty-slider-bar);
 }
 
-input[type="range"]::-webkit-slider-runnable-track {
+/* input[type="range"]::-webkit-slider-runnable-track {
     height: 1.7rem;
     border-radius: 16px;
     background-color: var(--empty-slider-bar);
@@ -127,7 +130,7 @@ input[type="range"]::-moz-range-track {
     height: 1.7rem;
     border-radius: 16px;
     background-color: var(--empty-slider-bar);
-}
+} */
 
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -139,7 +142,8 @@ input[type="range"]::-webkit-slider-thumb {
     border: 2px solid var(--discount-background);
     background-color: var(--discount-background);
 
-    box-shadow: -407px 0 0 400px var(--full-slider-bar) ;
+    /* box-shadow: -407px 0 0 400px var(--full-slider-bar) ; */
+    transition: .2s ease-in-out;
 }
 
 input[type="range"]::-moz-range-thumb {
@@ -149,9 +153,33 @@ input[type="range"]::-moz-range-thumb {
     background-color: var(--dark-desaturated-blue-text-and-CTA-background);
     border: 1px solid var(--dark-desaturated-blue-text-and-CTA-background);
 
-    box-shadow: -407px 0 0 400px var(--full-slider-bar) ;
+    /* box-shadow: -407px 0 0 400px var(--full-slider-bar) ; */
+    transition: .2s ease-in-out;
 }
 
+/* hover , focus and active state */
+input[type="range"]::-webkit-slider-thumb:hover {
+    box-shadow:  0 0 0 10px rgba(255,85,0, .1);
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+    box-shadow:  0 0 0 10px rgba(255,85,0, .1);
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+    box-shadow:  0 0 0 10px rgba(255,85,0, .1);
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+    box-shadow:  0 0 0 10px rgba(255,85,0, .1);
+}
+
+input[type="range"]:active::-moz-range-thumb {
+    box-shadow:  0 0 0 10px rgba(255,85,0, .1);
+}
+input[type="range"]:focus::-moz-range-thumb {
+    box-shadow:  0 0 0 10px rgba(255,85,0, .1);
+}
 /* .price-toggle {
     margin-bottom: 3rem;
 } */
