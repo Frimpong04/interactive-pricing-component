@@ -17,20 +17,23 @@
         <div class="pricing-component">
             <div class="upper-price-component">
                 <div class="views">
-                    <p>100KPAGEVIEWS</p>
-                    <p><span class="amount">$16.00</span>/month</p>
+                    <p><span class="views-number">100</span>K PAGEVIEWS</p>
+                    <p>$<span class="amount">16</span>.00 / month</p>
                 </div>
 
                 <div class="slider">
-                    <input type="range" id="slider" min="0" max="100" value="0" name="price-slider" >
+                    <input type="range" id="slider" min="1" max="100" value="0" name="price-slider" >
                 </div>
 
                 <div class="price-toggle">
                     <p>monthly billing</p>
                     <div class="toggle-buttons">
-                        <button class="monthly-btn"></button>
-                        <button class="yearly-btn"></button>
+                        <label class="switch">
+                            <input type="checkbox" />
+                            <span class="duration-slider"></span>
+                         </label>
                      </div>
+                    
                     <p>yearly  billing</p>
                     <p class="discount">25% discount</p>
                 </div>
