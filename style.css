@@ -252,6 +252,9 @@ input[type="checkbox"]:checked + .duration-slider:before {
     transform: translateX(26px);
 }
 
+input[type="checkbox"]:focus + .duration-slider {
+    box-shadow: 0px 0px 1px var(--grayish-blue-text);
+}
 
 .discount {
     background-color: var(--discount-background);
