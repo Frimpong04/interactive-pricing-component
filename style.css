@@ -42,8 +42,17 @@ body {
 }
 
 .title-container {
-    margin-bottom: 10rem;
+    /* margin-bottom: 10rem; */
     text-align: center;
+    /* border: 1px solid red; */
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("./images/pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 h1 {
