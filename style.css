@@ -23,15 +23,22 @@ html {
 
 /* body styles */
 body {
-    background-image: url("images/bg-pattern.svg");
+    /* background-image: url("images/bg-pattern.svg");
     background-repeat: no-repeat;
     background-position: top left;
-    background-size: contain;
+    background-size: contain; */
     height: 100vh;
     display: flex;
     justify-content: center;
     /* align-items: center; */
    background-color: var(--main-background);
+}
+
+.body-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:-1;
 }
 
 /* main section styles */
@@ -215,6 +222,7 @@ input[type="range"]:focus::-moz-range-thumb {
     border: none;
     outline: none;
 } */
+
 .switch {
     position: relative;
     display: inline-block;
@@ -302,4 +310,37 @@ input[type="checkbox"]:focus + .duration-slider {
     border-radius: 10rem;
     border: none;
     outline: none;
+}
+
+@media only screen and (max-width: 550px) {
+    /* body {
+        background-image: url("./images/bg-pattern.svg");
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: contain;
+
+    } */
+
+    .main-content {
+        width: 90%;
+    }
+}
+
+@media  only screen and (max-width: 320px) {
+
+    .main-content {
+        width: 95%;
+    }
+
+    .title-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .title-container p {
+        font-size: 1rem;
+    }
+
+    .lower-price-component {
+        flex-wrap: wrap;
+    }
 }
